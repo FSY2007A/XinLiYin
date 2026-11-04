@@ -1,0 +1,48 @@
+// J13-4..8 are the five signal pins shown in the user's current wiring.
+// No J8 FPGA pins are constrained or driven by this bitstream.
+IO_LOC "sys_clk" V22;
+IO_PORT "sys_clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "rst_n" Y12;
+IO_PORT "rst_n" IO_TYPE=LVCMOS15 PULL_MODE=UP BANK_VCCIO=1.5;
+IO_LOC "key0_n" AA13;
+IO_LOC "key1_n" AB13;
+IO_PORT "key0_n" IO_TYPE=LVCMOS15 PULL_MODE=UP BANK_VCCIO=1.5;
+IO_PORT "key1_n" IO_TYPE=LVCMOS15 PULL_MODE=UP BANK_VCCIO=1.5;
+
+// Existing 16-key matrix remains on J9.
+IO_LOC "matrix_row_n[0]" P19;
+IO_LOC "matrix_row_n[1]" R19;
+IO_LOC "matrix_row_n[2]" T21;
+IO_LOC "matrix_row_n[3]" U21;
+IO_LOC "matrix_col_n[0]" P16;
+IO_LOC "matrix_col_n[1]" R17;
+IO_LOC "matrix_col_n[2]" R18;
+IO_LOC "matrix_col_n[3]" T18;
+IO_PORT "matrix_row_n[0]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "matrix_row_n[1]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "matrix_row_n[2]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "matrix_row_n[3]" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "matrix_col_n[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_PORT "matrix_col_n[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_PORT "matrix_col_n[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_PORT "matrix_col_n[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+// TJC4827X343 UART: J13-4 is FPGA TX and J13-5 is divided screen TX input.
+IO_LOC "hmi_tx" C14;
+IO_PORT "hmi_tx" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "hmi_rx" B13;
+IO_PORT "hmi_rx" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+// PCM5102A standard I2S: J13-6 BCK, J13-7 LRCK, J13-8 DIN.
+IO_LOC "i2s_bck" C13;
+IO_LOC "i2s_lrck" A14;
+IO_LOC "i2s_din" A13;
+IO_PORT "i2s_bck" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "i2s_lrck" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "i2s_din" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+// DEBUG-USB2 telemetry remains available and does not use J8 signal pins.
+IO_LOC "pc_rx" V14;
+IO_LOC "pc_tx" U15;
+IO_PORT "pc_rx" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_PORT "pc_tx" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
