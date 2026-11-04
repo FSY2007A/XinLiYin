@@ -1,0 +1,14 @@
+Steel-string acoustic guitar: 2017 Martin HD28 Vintage Series.
+Recorded by Jeff Learman for the Discord SFZ General MIDI Bank.
+Instrument-specific SFZ header declares Creative Commons CC0.
+Source repository: https://github.com/sfzinstruments/Discord-SFZ-GM-Bank
+Pinned commit: 7a9c478fe331f94f246d33332f0adedb25bbbe27
+Instrument: Discord GM/Melodic/026-Acoustic Guitar (steel).sfz
+CC0: https://creativecommons.org/publicdomain/zero/1.0/
+
+FPGA adaptation: eight root recordings, mono 50MHz/4096 resampling,
+up to1.5 seconds per root with100ms end fade, IMA4-bit ADPCM,
+32 independent one-shot voice contexts with linear interpolation.
+Source file hashes, gain and encode statistics are in guitar_assets.json.
+Rebuild: modules/guitar-sample/tools/make_guitar_assets.py
+No microphone recording, synthesized pick noise, loops or long-hall effect.

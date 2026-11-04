@@ -1,0 +1,13 @@
+Pitea MHS sampleset: Lars Palo, Graham Goode and Panos Ghekas.
+Pipe recordings by Lars Palo, released under CC BY-SA 2.5.
+https://familjenpalo.se/vpo/pitea-mhs/
+https://familjenpalo.se/sites/default/files/sampleset/packages/PiteaMHS20250727.orgue
+https://creativecommons.org/licenses/by-sa/2.5/
+
+Modified for this project: six-stop grand registration, mono mix for each of
+MIDI 60-75, 24.4140625kHz resampling, 3072-sample attacks and phase-matched
+sustain loops up to 2048 samples, IMA ADPCM compression and restart metadata.
+The derived organ_*.mem sample data are shared under the same CC BY-SA 2.5.
+See organ_assets.json for source sample SHA256, registration and gain.
+The full license is ORGAN_LICENSE.txt (ORGAN_SAMPLE_LICENSE.txt in the exported
+FPGA package). DSP/HDL source is authored for this project.

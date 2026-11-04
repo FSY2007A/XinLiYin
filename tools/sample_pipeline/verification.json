@@ -1,0 +1,94 @@
+[
+  {
+    "bank": 0,
+    "instrument": "erhu",
+    "root_note": 60,
+    "decoded_samples": 14792,
+    "peak": 31779,
+    "rms": 9194,
+    "seam": {
+      "before": -20627,
+      "after": -22048,
+      "jump": 1421,
+      "typical_p99_jump": 14357
+    }
+  },
+  {
+    "bank": 1,
+    "instrument": "erhu",
+    "root_note": 64,
+    "decoded_samples": 12597,
+    "peak": 30721,
+    "rms": 6818,
+    "seam": {
+      "before": -5032,
+      "after": -8730,
+      "jump": 3698,
+      "typical_p99_jump": 8023
+    }
+  },
+  {
+    "bank": 2,
+    "instrument": "erhu",
+    "root_note": 67,
+    "decoded_samples": 18324,
+    "peak": 28492,
+    "rms": 6873,
+    "seam": {
+      "before": 2328,
+      "after": 6848,
+      "jump": 4520,
+      "typical_p99_jump": 7366
+    }
+  },
+  {
+    "bank": 3,
+    "instrument": "erhu",
+    "root_note": 69,
+    "decoded_samples": 22611,
+    "peak": 30250,
+    "rms": 14460,
+    "seam": {
+      "before": 10902,
+      "after": -1261,
+      "jump": 12163,
+      "typical_p99_jump": 14214
+    }
+  },
+  {
+    "bank": 4,
+    "instrument": "guzheng",
+    "root_note": 60,
+    "decoded_samples": 32768,
+    "peak": 30551,
+    "rms": 2628,
+    "seam": null
+  },
+  {
+    "bank": 5,
+    "instrument": "guzheng",
+    "root_note": 67,
+    "decoded_samples": 32768,
+    "peak": 30006,
+    "rms": 2917,
+    "seam": null
+  },
+  {
+    "bank": 6,
+    "instrument": "guzheng",
+    "root_note": 74,
+    "decoded_samples": 32768,
+    "peak": 31214,
+    "rms": 1582,
+    "seam": null
+  },
+  {
+    "bank": 7,
+    "instrument": "guzheng",
+    "root_note": 79,
+    "decoded_samples": 32768,
+    "peak": 15510,
+    "rms": 735,
+    "seam": null
+  }
+]
